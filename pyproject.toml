@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-renamer"
+version = "1.0.0"
+description = "A Python package to recursively rename files, directories, and replace content."
+readme = "README.md"
+readme-content-type = "text/markdown"
+authors = [
+    { name = "Sachin Arora", email = "schnaror@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["file-renaming", "directory-rename", "content-replace", "utility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    # Add dependencies here if required, e.g., "requests>=2.0.0"
+]
+
+[project.scripts]
+file-renamer = "file_renamer.cli:main"
